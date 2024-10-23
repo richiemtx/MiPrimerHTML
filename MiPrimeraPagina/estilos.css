@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400,500,600,700,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(images/GT3RS.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: #FFFDFC;
+    font-size: 75px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFDFC;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+    color: #ce967b;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono{
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 150px;
+    height: auto; 
+    z-index: 1000; 
+}
+
+.menu label{
+    cursor: pointer;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1{
+    font-size: 75px;
+    line-height: 80px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p{
+    font-size: 16px;
+    color: #c5c5c5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #ce967b;
+    color: #f9fafc;
+    text-transform: uppercase;
+}
+
+.btn-1:hover{
+    background-color: #ebad8b;
+}
+
+.cars {
+    padding: 100px 0;
+    background-color: #e1e2e6;
+    position: relative;
+}
+
+.cars-content{
+    text-align: center;
+}
+
+.cars-content h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p{
+    font-size: 16px;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+.cars-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.cars-1 {
+    padding: 0 25px;
+}
+
+.cars-1 img {
+    width: 200px;
+}
+
+.cars-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.cars-1 h3{
+    color: #323337;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.general{
+    display: flex;
+}
+
+.general-1 {
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #e1e2e6;
+}
+
+.general-2 {
+    background-image: url(images/PorscheC.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.general-3 {
+    background-image: url(images/Lambo2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0;
+}
+
+.footer {
+    padding: 100px 0;
+    background-color: #000000;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3{
+    font-size: 18px;
+    color: #f9fafc;
+    margin-bottom: 15px;
+}
+
+.link a {
+    font-size: 16px;
+    color: #c5c5c5;
+    display: block;
+    margin-bottom: 15px;
+}
+
+@media(max-width:991px) {
+
+    .menu{
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%
+    }
+
+    #menu:checked ~ .navbar {
+        display: inline;
+    }
+
+    .header {
+        min-height: 0vh;
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-content p{
+        padding: 0;
+    }
+
+    .cars {
+        padding: 30px;
+    }
+
+    .cars-content h2{
+        padding: 0;
+    }
+
+    .txt-p{
+        padding: 0;
+    }
+
+    .cars-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .cars-img {
+        display: none;
+    }
+
+    .general{
+        flex-direction: column;
+    }
+
+    .general-1{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .general-2, .general-3 {
+        display: none;
+    }
+
+    .footer{
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer{
+        background: #4C3D3D;
+        color: white;
+        text-align: center;
+        padding: 10 px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      footer div{
+        margin:  0 auto;
+      }
+    
+      footer div i{
+         font-size: 30px;
+         margin: 0 15px;
+      }
+}
